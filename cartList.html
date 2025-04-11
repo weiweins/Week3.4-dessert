@@ -1,0 +1,261 @@
+<!doctype html>
+<html lang="zh-tw">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="shortcut icon" href="dessert-img/logo-dark.svg" type="image/x-icon">
+    <title> Sweetaste｜購物車</title>
+    <!-- google icon -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined">
+    <!-- 引入font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <!-- 引入Bootstrap5 CSS和JS -->
+    <link rel="stylesheet" href="assets/css/all.css">
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+  <!-- 頁首 -->
+  <header  class="bg-white">
+    <!-- navbar設定  -->
+    <nav class="container navbar navbar-expand-md navbar-light flex-nowrap">
+      <div class="container-fluid justify-content-md-start position-relative z-0 ">
+        <!-- 漢堡選單鈕 -->
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand d-none d-md-block" href="index.html"><img src="./dessert-img/logo-all-dark.svg" alt="logo大圖" width="220px" height="40px" ></a>
+        
+        <div class=" list collapse navbar-collapse  z-9999 start-0 w-100 bg-white text-center ms-md-0" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 "> <!-- me-auto 靠左 >> 改成ms-auto 變成靠右：margin-left:auto -->
+            <li class="nav-item fw-bold me-md-5">
+              <a class="nav-link" aria-current="page" href="index.html">首頁</a>
+            </li>
+
+            <li class="nav-item fw-bold me-md-5">
+              <a class="nav-link" href="product.html">甜點</a>
+            </li>
+
+            <li class="nav-item fw-bold me-md-5">
+              <a class="nav-link" href="login.html">登入</a>
+            </li>
+
+          </ul>
+
+        </div>
+
+        <!-- 平板以下呈現的logo小圖 -->
+        <div class="mx-auto">
+          <a class="navbar-brand d-md-none mx-auto" href="index.html"><img src="./dessert-img/logotype-lg-dark.svg" alt="logo小圖" width="115px" height="18px" ></a>
+        </div>
+
+      <!-- cart -->
+      <div>
+        <a class="navbar-brand" href="cartList.html"><img src="./dessert-img/shopping_cart.png" alt="cart" width="24px" height="24px" ></a>
+      </div>
+
+      </div>
+
+
+
+
+    </nav>
+
+</header>
+
+<main>
+  <div class="container px-0 px-md-3">
+    <div><h1 class="bg-light-green text-center p-4 m-0 d-block d-md-none">您的購物車</h1></div>
+    <div class="row justify-content-center">
+      <!-- 左大區塊 -->
+      <div class="col-md-8 px-5">
+        <div><h2 class="bg-light-green text-center p-4 m-0 d-none d-md-block">您的購物車</h2></div>
+
+        <!-- 所選商品1 -->
+        <div class="col-md-12 d-flex justify-content-between align-items-center border-bottom border-light-green ">
+          <div><img class="cartImg mb-2 mt-4 mb-md-4" src="https://bit.ly/2QvsT63" alt="productImg"></div>     
+          <div class="d-flex flex-column justify-content-center">
+            <span>焦糖馬卡龍</span>
+            <span>NT$ 450</span>
+          </div>
+          
+          
+          <!-- 數量按鈕 -->
+          <div class="input-group p-3 m-0 w-25 h-50 d-flex justify-content-center" >
+            <span class="btn border border-1 rounded-0 align-content-center border-light-green"> - </span>
+            <input type="text" class="form-control text-center border-light-green" aria-label="amount (to-select-product)" value="2" readonly>
+            <span class="btn  border border-1 rounded-0 align-content-center border-light-green"> + </span>
+          </div>
+
+          <div class="d-none d-md-block"><span class="fw-bold text-center">NT$ 900</span></div>
+          <div class="btn d-none d-md-block"><i class="fa-regular fa-trash fw-bold text-middle-green fs-4"></i></div>
+        </div>
+        <div class="d-flex justify-content-end border-bottom border-light-green d-block d-md-none fw-bold py-3"><span>NT$ 900</span></div>
+
+        <!-- 所選商品2 -->
+        <div class="col-md-12 d-flex justify-content-between align-items-center  border-bottom border-light-green">
+          <div><img class="cartImg my-4" src="https://bit.ly/2zBDAxX" alt="productImg"></div>
+          <div class="d-flex flex-column justify-content-center">
+            <span>焦糖馬卡龍</span>
+            <span>NT$ 450</span>
+          </div>
+          
+          <!-- 數量按鈕 -->
+          <div class="input-group p-3 m-0 w-25 h-50 d-flex justify-content-center" >
+            <span class="btn border border-1 rounded-0 align-content-center border-light-green"> - </span>
+            <input type="text" class="form-control text-center border-light-green" aria-label="amount (to-select-product)" value="2" readonly>
+            <span class="btn  border border-1 rounded-0 align-content-center border-light-green"> + </span>
+          </div>
+
+          <div class="d-none d-md-block"><span class="fw-bold text-center">NT$ 900</span></div>
+          <div class="btn d-none d-md-block"><i class="fa-regular fa-trash fw-bold text-middle-green fs-4"></i></div>
+        </div>
+        <div class="d-flex justify-content-end border-bottom border-light-green d-block d-md-none fw-bold py-3"><span>NT$ 900</span></div>
+
+        <!-- 所選商品3 -->
+        <div class="col-md-12 d-flex justify-content-between align-items-center border-bottom border-light-green ">
+          <div><img class="cartImg my-4" src="https://bit.ly/2zKOP7w" alt="productImg"></div>
+          <div class="d-flex flex-column justify-content-center">
+            <span>焦糖馬卡龍</span>
+            <span>NT$ 450</span>
+          </div>
+          
+          <!-- 數量按鈕 -->
+          <div class="input-group p-3 m-0 w-25 h-50 d-flex justify-content-center " >
+            <span class="btn border border-1 rounded-0 align-content-center border-light-green "> - </span>
+            <input type="text" class="form-control text-center border-light-green" aria-label="amount (to-select-product)" value="2" readonly>
+            <span class="btn  border border-1 rounded-0 align-content-center border-light-green "> + </span>
+          </div>
+
+          <div class="d-none d-md-block"><span class="fw-bold text-center">NT$ 900</span></div>
+          <div class="btn d-none d-md-block"><i class="fa-regular fa-trash fw-bold text-middle-green fs-4"></i></div>
+        </div>
+        <div class="d-flex justify-content-end border-bottom border-light-green d-block d-md-none fw-bold py-3"><span>NT$ 900</span></div>
+
+      </div>
+    
+      <!-- 右大區塊 -->
+      <div class="col-md-4 d-none d-md-block ">
+        <div class="col-md-12 bg-dark-green">
+          <div class="px-3"><h2 class="col-md-12 text-light-green text-center border-bottom border-light-green py-4">訂單摘要</h2></div>
+          <div class="col-md-12 d-flex justify-content-between px-3 py-2">
+            <span class="text-light-green fs-5">小計</span>
+            <span class="text-light-green fs-5">NT$ 2,700</span>
+          </div>
+
+          <div class="col-md-12 d-flex justify-content-between px-3 py-2">
+            <span class="text-light-green fs-5">運費</span>
+            <span class="text-light-green fs-5">NT$ 300</span>
+          </div>
+
+          <div class="col-md-12 d-flex justify-content-between px-3 py-4">
+            <span class="fw-bold text-light-green">總計</span>
+            <span class="fw-bold text-light-green">NT$ 3,000</span>
+          </div>
+
+          <div class="col-md-12 d-block p-0">
+            <a class="btn btn-warning rounded-0 fs-2 w-100 px-5 justify-content-center text-dark-green fw-bold" href="./order1Page.html"><span class="text-center">結帳</span></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- ms尺寸時的訂單摘要 -->
+      <div class="col-12 d-block d-md-none px-5 mt-5">
+        <div class="d-block bg-light-green text-center p-4 mt-3"><h1 class="m-0">訂單摘要</h1></div>
+        <div class="d-flex justify-content-between px-3 py-2">
+          <span class="text-dark-green fs-5">小計</span>
+          <span class="text-dark-green fs-5">NT$ 2,700</span>
+        </div>
+
+        <div class="d-flex justify-content-between px-3 py-2">
+          <span class="text-dark-green fs-5">運費</span>
+          <span class="text-dark-green fs-5">NT$ 300</span>
+        </div>
+
+        <div class="d-flex justify-content-between px-3 py-4">
+          <span class="fw-bold text-dark-green">總計</span>
+          <span class="fw-bold text-dark-green">NT$ 3,000</span>
+        </div>
+
+        <div class="d-block p-0 ">
+          <a class="btn btn-warning rounded-0 fs-2 w-100 p-4 justify-content-center text-dark-green fw-bold" href="./order1Page.html"><span class="text-center">結帳</span></a>
+        </div>
+      </div>
+    
+    </div>
+  </div>
+
+</main>
+  
+  <!-- 頁尾 -->
+  <footer>
+    <div class="item1 bg-dark-green mt-md-5">
+      <div class="container py-2" >
+        <div class=" row justify-content-between">
+
+          <div class="d-flex justify-content-center justify-content-md-start align-items-center col-md-6 py-md-0 py-3">
+            <div>
+              <img src="./dessert-img/logo-light.svg" alt="logo-light" width="40px" height="40px" >
+            </div>
+            <p class="fs-4 text-light m-0 ps-4">訂閱你我的甜蜜郵件</p>
+          </div>
+
+          <!-- email資訊框 -->
+          <div class="col-md-4 align-content-center m-0 p-3"> 
+            <form>
+              <div class="input-group " >
+                <label for="emailText"><img src="./dessert-img/mail-24px.png"  alt="mail" class="input-group-text light rounded-0"></label>
+                <input type="text" class="form-control" placeholder="email" id="emailText" name="email">
+                <button class="btn btn-outline-warning btn-warning rounded-0" type="submit"><img src="./dessert-img/arrow_forward-24px.png" alt="send"></button>
+              </div>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="item2 bg-light-green">
+      <div class="container py-5 ">
+        <div class="row justify-content-between">
+
+          <div class=" information col-lg-3 flex-column justify-content-between">
+            <img src="./dessert-img/logotype-sm-dark.svg" alt="small logo"  width="172px" height="27px">
+            
+            <div class="mt-5">
+              <p class="fs-5"> 07-1234-5678<br> sweetaste@email.com<br> 800 高雄市新興區幸福路 520 號 <p>
+            </div>
+          </div>
+
+          <div class=" col-lg-3 text-end  d-md-block  d-none">
+            <img src="./dessert-img/sm-今天是個吃甜點的好日子.svg" alt="text" width="59px" height="220px">
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="item2 bg-light-green">
+      <div class="d-md-flex justify-content-between mx-auto container">
+        <ul class="d-flex justify-content-start p-0">
+          <li>
+            <a href="#" target="_blank"><img src="./dessert-img/ic-line@.svg" alt="line"  width="32px" height="32px" ></a>
+          </li>
+          <li class="ms-3">
+            <a href="#" target="_blank"><img src="./dessert-img/ic-facebook.svg" alt="fb" width="32px" height="32px"></a>
+          </li>
+        </ul>
+        <div>
+          <p class="m-0">
+            <small> &copy; 2018 Sweetaste* All Rights Reserved </small>
+          </p>
+        </div>
+      </div>
+    </div>
+
+
+  </footer>
+
+  
+</body>
+</html>

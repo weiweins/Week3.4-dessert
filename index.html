@@ -1,17 +1,311 @@
 <!DOCTYPE html>
 <html lang="zh-tw">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <link rel="shortcut icon" href="https://public-v2links.adobecc.com/934efdb7-a7e4-47d5-572e-efece0914f62/component?params=component_id%3Ad0051f9d-ff6e-443a-a052-7a5e76d06e69&params=version%3A0&token=1741080083_da39a3ee_f95da7811b1c0fad8804b927ec336a7ec512d218&api_key=CometServer1" type="image/x-icon">
-    <title> Sweetaste｜首頁</title>
-    <link rel="stylesheet" href="dessert-style.css">
-    <!-- 引入Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.3/css/bootstrap.min.css">
-</head>
+    <!doctype html>
+    <html lang="zh-tw">
+      <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <link rel="shortcut icon" href="dessert-img/logo-dark.svg" type="image/x-icon">
+        <title> Sweetaste｜首頁</title>
+        <!-- google icon -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined">
+        <!-- 引入font-awesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">        
+        <!-- 引入Bootstrap5 CSS和JS -->
+        <link rel="stylesheet" href="assets/css/all.css">
+        <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    </head>
 
 <body>
-    
-    
+  <!-- 頁首 -->
+    <header  class="bg-white">
+      <!-- navbar設定  -->
+      <nav class="container navbar navbar-expand-md navbar-light flex-nowrap py-4">
+        <div class="container-fluid justify-content-md-start position-relative z-0 ">
+          <!-- 漢堡選單鈕 -->
+          <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <a class="navbar-brand d-none d-md-block" href="index.html"><img src="./dessert-img/logo-all-dark.svg" alt="logo大圖" width="220px" height="40px" ></a>
+          
+          <div class=" list collapse navbar-collapse  z-1 start-0 w-100 bg-white text-center ms-md-5" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 "> <!-- me-auto 靠左 >> 改成ms-auto 變成靠右：margin-left:auto -->
+              <li class="nav-item fw-bold me-md-5">
+                <a class="nav-link" aria-current="page" href="index.html">首頁</a>
+              </li>
+  
+              <li class="nav-item fw-bold me-md-5">
+                <a class="nav-link" href="product.html">甜點</a>
+              </li>
+  
+              <li class="nav-item fw-bold me-md-5">
+                <a class="nav-link" href="login.html">登入</a>
+              </li>
+              
+              <!-- <li class="nav-item">
+              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+              </li> -->
+
+            </ul>
+
+            <!-- 搜索欄
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form> -->
+  
+          </div>
+  
+          <!-- 平板以下呈現的logo小圖 -->
+          <div class="mx-auto">
+            <a class="navbar-brand d-md-none mx-auto" href="index.html"><img src="./dessert-img/logotype-lg-dark.svg" alt="logo小圖" width="115px" height="18px" ></a>
+          </div>
+  
+        <!-- cart -->
+        <div>
+          <a class="navbar-brand" href="cartList.html"><img src="./dessert-img/shopping_cart.png" alt="cart" width="24px" height="24px" ></a>
+        </div>
+  
+        </div>
+  
+  
+  
+  
+      </nav>
+  
+  </header>
+
+
+    <main>
+      <div class="container">
+        <div class="row">  
+          <div class="row"><img class="backgroundImg" src="https://bit.ly/2OhbMHr" alt="backgroundImg"></div>
+
+          <!-- 中間3組小圖 -->
+          <div class="col-md-10 d-flex justify-content-center mx-auto imgBox">
+            <div class="col-4 position-relative z-0 ">
+              <div class="w-100 "><img class="bgImg" src="https://bit.ly/2R5tqwD" alt="bgImg1"></div>
+              <div class="position-absolute z-1 top-0 start-0 w-100"><a class="imgConnect text-decoration-none text-white flex-column fs-2 d-block text-center align-content-center w-100" href="./product.html">本日精選</a></div>
+            </div>
+
+            <div class="col-4 position-relative z-0 border border-3 border-white border-top-0 border-bottom-0 ">
+              <div class="w-100"><img class="bgImg" src="https://bit.ly/2Dwoxd7" alt="bgImg2"></div>
+              <div class="position-absolute z-1 top-0 start-0 w-100"><a class="imgConnect text-decoration-none text-white fs-2 d-block  text-center align-content-center w-100" href="./product.html">人氣推薦</a></div>
+            </div>
+
+            <div class="col-4 position-relative z-0">
+              <div class=" w-100"><img class="bgImg"  src="https://bit.ly/2OUteif" alt="bgImg3"></div>
+              <div class=" position-absolute z-1 top-0 start-0 w-100"><a class="imgConnect text-decoration-none text-white fs-2 d-block text-center align-content-center w-100" href="./product.html">新品上市</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+          <!-- content1 -->
+          <div class="row content position-relative z-0 my-5 py-3">
+            <div class="col-12 textBox d-flex justify-content-between ">
+            <div class="col-md-5 dessertImg1"><img src="https://bit.ly/2xPn7Eq" alt="dessertImg1"></div>
+            
+            <div class="col-md-4 contentText1 fs-md-4 align-content-center text-middle-green">
+              <div class="ps-md-5 ms-md-3 ">
+                <p>
+                  青山依舊在，幾度夕陽紅。慣看秋月春風。<br>
+                  一壺濁酒喜相逢，浪花淘盡英雄。是非成敗<br>
+                  轉頭空，滾滾長江東逝水，白髮漁樵江渚上，<br>
+                  古今多少事，都付笑談中。<br>
+                </p>
+              </div>
+              <div class="pe-md-5 me-md-3 ms-n4 ms-md-0">
+                <p>
+                  是非成敗轉頭空，滾滾長江東逝水，白<br>
+                  髮漁樵江渚上，古今多少事，都付笑談中。
+                </p>
+              </div>
+            </div>
+
+            <div class="col-md-2 contentTitle "><img src="./dessert-img/lg-為什麼選擇了做甜點.svg" alt="content1 title"></div>
+          
+            </div>
+          </div>
+        
+          
+          <!-- content2 -->
+          <div class="row content d-flex position-relative z-0 my-5 py-3">
+            <div class="col-12 textBox d-flex justify-content-between ">
+            
+            <div class="col-md-4 contentText2 align-content-center text-middle-green">
+              <div class="ps-md-5">
+                <p>
+                  青山依舊在，幾度夕陽紅。慣看秋月春風。<br>
+                  一壺濁酒喜相逢，浪花淘盡英雄。是非成敗<br>
+                  轉頭空，滾滾長江東逝水，白髮漁樵江渚上，<br>
+                  古今多少事，都付笑談中。<br>
+                </p>
+              </div>
+              <div class="ms-n4 ms-md-0">
+                <p>
+                  是非成敗轉頭空，滾滾長江東逝水，白<br>
+                  髮漁樵江渚上，古今多少事，都付笑談中。
+                </p>
+              </div>
+
+            </div>
+
+            <div class="col-md-2 contentTitle"><img src="./dessert-img/lg-為什麼一定要吃甜點.svg" alt="content1 title"></div>
+            <div class="col-md-5 dessertImg2 "><img src="https://bit.ly/2zzAQS4" alt="dessertImg2"></div>            
+          
+            </div>
+          </div>
+   
+          <!-- slogan -->
+          <div class="row  justify-content-center ">
+            <div class="col-1 sloganImg my-5 justify-content-center align-items-center"><img src="./dessert-img/lg-想吃甜點是不需要理由的.svg" alt="slogan"></div>
+          </div>
+          
+          <!-- product -->
+          <div class="row justify-content-center mt-3 px-4">
+            <div class="product col-md-4 col-6 p-2 ">
+              <div >
+                <p class="featured fs-3 text-center text-light-green bg-dark-green p-3 ms-3"> 每日精選 </p>
+              </div>
+
+              <div>
+                <img class="favorite " src="./dessert-img/favorite_border.png" alt="favorite">
+              </div>
+
+              <div>
+                <img class="productImg" src="https://bit.ly/2zBjQuq" alt="焦糖馬卡龍">
+              </div>
+
+              <div class="information">
+                <p class="d-block text-center w-100 fs-3 py-3 mb-0 border border-light-green border-top-0 border-end-0">焦糖馬卡龍</p>
+                <p class="d-block text-center w-100 fs-3 py-3 mb-0 border border-light-green border-top-0">$450</p>
+              </div>
+
+              <div>
+                <a class="btn btn-warning fs-2 w-100 p-4 rounded-0 border-0" href="#">加入購物車</a>
+              </div>
+            </div>   
+
+            <div class="product col-md-4 p-2 d-none d-md-block">
+              <div >
+                <p class="featured fs-3 text-center text-light-green bg-dark-green p-3 ms-3"> 每日精選 </p>
+              </div>
+
+              <div>
+                <img class="favorite" src="./dessert-img/favorite_border.png" alt="favorite">
+              </div>
+
+              <div>
+                <img class="productImg" src="https://bit.ly/2zBDAxX" alt="焦糖馬卡龍">
+              </div>
+
+              <div class="information">
+                <p class="d-block text-center w-100 fs-3 py-3 mb-0 border border-light-green border-top-0 border-end-0">焦糖馬卡龍</p>
+                <p class="d-block text-center w-100 fs-3 py-3 mb-0 border border-light-green border-top-0">$450</p>
+              </div>
+
+              <div>
+                <a class="btn btn-warning fs-2 w-100 p-4 rounded-0 border-0" href="#">加入購物車</a>
+              </div>
+            </div>   
+
+            <div class="product col-4 p-2 d-none d-md-block">
+              <div >
+                <p class="featured fs-3 text-center text-light-green bg-dark-green p-3 ms-3"> 每日精選 </p>
+              </div>
+
+              <div>
+                <img class="favorite" src="./dessert-img/favorite_border.png" alt="favorite" >
+              </div>
+
+              <div>
+                <img class="productImg" src="https://bit.ly/2QbVsVR" alt="焦糖馬卡龍">
+              </div>
+
+              <div class="information">
+                <p class="d-block text-center w-100 fs-3 py-3 mb-0 border border-light-green border-top-0 border-end-0">焦糖馬卡龍</p>
+                <p class="d-block text-center w-100 fs-3 py-3 mb-0 border border-light-green border-top-0">$450</p>
+              </div>
+
+              <div>
+                <a class="btn btn-warning fs-2 w-100 p-4 rounded-0 border-0" href="#">加入購物車</a>
+              </div>
+            </div>   
+          </div>
+        
+      
+    </main>
+
+  <!-- 頁尾 -->
+  <footer>
+    <div class="item1 bg-dark-green mt-md-5">
+      <div class="container py-2" >
+        <div class=" row justify-content-between">
+
+          <div class="d-flex justify-content-center justify-content-md-start align-items-center col-md-6 py-md-0 py-3">
+            <div>
+              <img src="./dessert-img/logo-light.svg" alt="logo-light" width="40px" height="40px" >
+            </div>
+            <p class="fs-4 text-light m-0 ps-4">訂閱你我的甜蜜郵件</p>
+          </div>
+
+          <!-- email資訊框 -->
+          <div class="col-md-4 align-content-center m-0 p-3"> 
+            <form>
+              <div class="input-group " >
+                <label for="emailText"><img src="./dessert-img/mail-24px.png"  alt="mail" class="input-group-text light rounded-0"></label>
+                <input type="text" class="form-control" placeholder="email" id="emailText" name="email">
+                <button class="btn btn-outline-warning btn-warning rounded-0" type="submit"><img src="./dessert-img/arrow_forward-24px.png" alt="send"></button>
+              </div>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="item2 bg-light-green">
+      <div class="container py-5 ">
+        <div class="row justify-content-between">
+
+          <div class=" information col-lg-3 flex-column justify-content-between">
+            <img src="./dessert-img/logotype-sm-dark.svg" alt="small logo"  width="172px" height="27px">
+            
+            <div class="mt-5">
+              <p class="fs-5"> 07-1234-5678<br> sweetaste@email.com<br> 800 高雄市新興區幸福路 520 號 <p>
+            </div>
+          </div>
+
+          <div class=" col-lg-3 text-end  d-md-block  d-none">
+            <img src="./dessert-img/sm-今天是個吃甜點的好日子.svg" alt="text" width="59px" height="220px">
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="item2 bg-light-green">
+      <div class="d-md-flex justify-content-between mx-auto container">
+        <ul class="d-flex justify-content-start p-0">
+          <li>
+            <a href="#" target="_blank"><img src="./dessert-img/ic-line@.svg" alt="line"  width="32px" height="32px" ></a>
+          </li>
+          <li class="ms-3">
+            <a href="#" target="_blank"><img src="./dessert-img/ic-facebook.svg" alt="fb" width="32px" height="32px"></a>
+          </li>
+        </ul>
+        <div>
+          <p class="m-0">
+            <small> &copy; 2018 Sweetaste* All Rights Reserved </small>
+          </p>
+        </div>
+      </div>
+    </div>
+
+
+  </footer>
+
+  
 </body>
 </html>

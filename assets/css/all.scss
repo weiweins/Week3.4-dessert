@@ -1,0 +1,5 @@
+@import "./base/reset";
+@import "./helpers/variables";
+@import "./common/footer", "./common/header", "./common/orderImformation","./pages/product","./pages/payment","./pages/orderPage","./pages/login","./pages/index";
+@import "../../node_modules/bootstrap/scss/bootstrap";
+@import "./base/commom";

@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="zh-tw">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="shortcut icon" href="dessert-img/logo-dark.svg" type="image/x-icon">
+    <title> Sweetaste｜會員登入</title>
+    <!-- google icon -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined">
+    <!-- 引入font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <!-- 引入Bootstrap5 CSS和JS -->
+    <link rel="stylesheet" href="assets/css/all.css">
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</head>
+
+  <body>
+    <!-- 頁首 -->
+    <header  class="bg-white">
+      <!-- navbar設定  -->
+      <nav class="container navbar navbar-expand-md navbar-light flex-nowrap">
+        <div class="container-fluid justify-content-md-start position-relative z-0 ">
+          <!-- 漢堡選單鈕 -->
+          <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <a class="navbar-brand d-none d-md-block" href="index.html"><img src="./dessert-img/logo-all-dark.svg" alt="logo大圖" width="220px" height="40px" ></a>
+          
+          <div class=" list collapse navbar-collapse  z-1 start-0 w-100 bg-white text-center ms-md-5" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 "> <!-- me-auto 靠左 >> 改成ms-auto 變成靠右：margin-left:auto -->
+              <li class="nav-item fw-bold me-md-5">
+                <a class="nav-link" aria-current="page" href="index.html">首頁</a>
+              </li>
+  
+              <li class="nav-item fw-bold me-md-5">
+                <a class="nav-link" href="product.html">甜點</a>
+              </li>
+  
+              <li class="nav-item fw-bold me-md-5">
+                <a class="nav-link" href="login.html">登入</a>
+              </li>
+  
+            </ul>
+  
+          </div>
+  
+          <!-- 平板以下呈現的logo小圖 -->
+          <div class="mx-auto">
+            <a class="navbar-brand d-md-none mx-auto" href="index.html"><img src="./dessert-img/logotype-lg-dark.svg" alt="logo小圖" width="115px" height="18px" ></a>
+          </div>
+  
+        <!-- cart -->
+        <div>
+          <a class="navbar-brand" href="cartList.html"><img src="./dessert-img/shopping_cart.png" alt="cart" width="24px" height="24px" ></a>
+        </div>
+  
+        </div>
+  
+  
+  
+  
+      </nav>
+  
+  </header>
+  
+  <main>
+    <div class="container">
+      <div class="row justify-content-center">
+        <!-- 左區塊 -->
+        <div class="col-md-5 mt-md-4 mb-md-4 p-0 justify-content-center">
+           <div class="col-md-12 bg-dark-green p-md-3 px-0 ">
+              <div class="p-10">
+                <h1 class="text-light-green text-center d-flex justify-content-center align-bottom  m-3 p-5">會員登入</h1>
+              </div>
+              <div class="d-md-none justify-content-center bg-light-green">
+               <ul class="m-0 p-4 d-flex ">
+                <li class="border border-1 border-light-green"><a href="#" target="_blank" class="w-100 text-decoration-none justify-content-center" ><img class="bg-white p-3 w-100 h-75 mt-3" src="./dessert-img/ic-facebook-logotype.svg" alt="facebook"></a></li>
+                <li class="border border-1 border-light-green"><a href="#" target="_blank" class="w-100 text-decoration-none justify-content-center" ><img class="bg-white p-3 w-100 h-75 mt-3" src="./dessert-img/ic-google.svg" alt="google" ></a></li>
+                <li class="border border-1 border-light-green"><a href="#" target="_blank" class="w-100 text-decoration-none justify-content-center" ><img class="bg-white p-3 w-100 h-75 mt-3" src="./dessert-img/ic-yahoo.svg" alt="yahoo" ></a></li>
+               </ul>
+              </div>
+              <div class="col-md-12">
+                <!-- username -->
+                <div class="input-group has-validation px-md-3 px-5 my-3 mb-md-3" >
+
+                  <label><img src="./dessert-img/user.png"  alt="username" class="input-group-text bg-light-green rounded-0" width="50px" height="50px"></label>
+                  <input type="text" class="form-control  rounded-0 border-0 bg-light-green"  placeholder="電子信箱/手機號碼" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+
+                  <!-- <div class="invalid-feedback">
+                    Please choose a username.
+                  </div> -->
+                </div>
+              
+                <!-- password -->
+                <div >
+                  <div class="input-group has-validation p-md-3 px-5" >   <!--  has-validation 認證check-->
+                
+                      <label><img src="./dessert-img/key.png"  alt="password" class="input-group-text bg-light-green rounded-0" width="50px" height="50px"></label>
+                      <input type="password" class="form-control  rounded-0 border-0 bg-light-green"  placeholder="請輸入使用者密碼" id="validationCustomPassword" aria-describedby="inputGroupPrepend" required>
+                
+                      <!--  欄下面未填提示文字 
+                      <div class="invalid-feedback">
+                      Please choose a username.
+                      </div> -->
+                  </div>
+                </div>
+
+                <!-- rember me -->
+                <div class="form-check  m-0 p-md-0 pt-3 pb-4 float-none">
+                  <input class="form-check-input rounded-0 ms-3" type="checkbox" value="" id="invalidCheck" > <!-- required 該欄必填的意思 -->
+                  <label class="form-check-label  text-light-green ms-2" for="invalidCheck">
+                    記住我
+                  </label>
+
+                  <!--  check欄下面提示文字 
+                  <div class="invalid-feedback">
+                    You must agree before submitting.
+                  </div> -->
+                </div> 
+              </div>  
+            </div>
+
+            <div class="col-md-12 ">
+              <div class="input-group ">
+                <button class="btn btn-outline-warning btn-warning rounded-0 fs-2 w-100 text-dark-green p-4" type="submit"> 登入帳號 </button>
+              </div>
+            </div>
+         </div>
+
+         <!-- 右區塊 -->
+         <div class="col-md-5 bg-light-green my-5 p-0 justify-content-center d-none d-md-block">
+            <div clsaa="col-md-12">
+              <div>
+                <h2 class="text-middle-green text-center pt-4 mt-5 mb-0"> —— 連結社群帳號 —— </h2>
+              </div>
+              <div clsaa="connect col-md-12 ">
+                <ul class="px-5 py-3 m-0">
+                  <li class="mt-4 text-center"><a href="#" target="_blank" class="text-decoration-none d-block bg-white p-1 w-100" ><img class="icImg" src="./dessert-img/ic-facebook-logotype.svg" alt="facebook"></a></li>
+                  <li class="mt-4 text-center"><a href="#" target="_blank" class="text-decoration-none d-block bg-white p-1 w-100"><img class="icImg" src="./dessert-img/ic-google.svg" alt="google"></a></li>
+                  <li class="mt-4 text-center"><a href="#" target="_blank" class="text-decoration-none d-block bg-white p-1 w-100"><img class="icImg " src="./dessert-img/ic-yahoo.svg" alt="yahoo"></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+         </div>
+
+      </div>
+      
+    </div>
+
+  </main>
+
+  
+  <!-- 頁尾 -->
+  <footer>
+    <div class="item1 bg-dark-green mt-md-5">
+      <div class="container py-2" >
+        <div class=" row justify-content-between">
+
+          <div class="d-flex justify-content-center justify-content-md-start align-items-center col-md-6 py-md-0 py-3">
+            <div>
+              <img src="./dessert-img/logo-light.svg" alt="logo-light" width="40px" height="40px" >
+            </div>
+            <p class="fs-4 text-light m-0 ps-4">訂閱你我的甜蜜郵件</p>
+          </div>
+
+          <!-- email資訊框 -->
+          <div class="col-md-4 align-content-center m-0 p-3" > 
+            <form>
+              <div class="input-group " >
+                <label for="emailText"><img src="./dessert-img/mail-24px.png"  alt="mail" class="input-group-text light rounded-0"></label>
+                <input type="text" class="form-control" placeholder="email" id="emailText" name="email">
+                <button class="btn btn-outline-warning btn-warning rounded-0" type="submit"><img src="./dessert-img/arrow_forward-24px.png" alt="send"></button>
+              </div>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="item2 bg-light-green">
+      <div class="container py-5 ">
+        <div class="row justify-content-between">
+
+          <div class=" information col-lg-3 flex-column justify-content-between">
+            <img src="./dessert-img/logotype-sm-dark.svg" alt="small logo"  width="172px" height="27px">
+            
+            <div class="mt-5">
+              <p class="fs-5"> 07-1234-5678<br> sweetaste@email.com<br> 800 高雄市新興區幸福路 520 號 <p>
+            </div>
+          </div>
+
+          <div class=" col-lg-3 text-end  d-md-block  d-none">
+            <img src="./dessert-img/sm-今天是個吃甜點的好日子.svg" alt="text" width="59px" height="220px">
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="item2 bg-light-green">
+      <div class="d-md-flex justify-content-between mx-auto container">
+        <ul class="d-flex justify-content-start p-0">
+          <li>
+            <a href="#" target="_blank"><img src="./dessert-img/ic-line@.svg" alt="line"  width="32px" height="32px" ></a>
+          </li>
+          <li class="ms-3">
+            <a href="#" target="_blank"><img src="./dessert-img/ic-facebook.svg" alt="fb" width="32px" height="32px"></a>
+          </li>
+        </ul>
+        <div>
+          <p class="m-0">
+            <small> &copy; 2018 Sweetaste* All Rights Reserved </small>
+          </p>
+        </div>
+      </div>
+    </div>
+
+
+  </footer>
+  
+  </body>
+
+</html>

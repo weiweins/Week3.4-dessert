@@ -1,0 +1,43 @@
+/* cartList也有該標籤，擇一個css檔寫入即可 */
+.cartImg{
+    object-fit: cover;
+    width: 110px;
+    height: 110px;
+}
+
+/* 限制內容顯示上限為1行，多的變成... */
+.imgInformation {
+  overflow: hidden;
+  display: -webkit-box;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;   
+}
+.form-select option,input[type="text"] {
+    font-family: "PingFang TC", "Helvetica Neue","Times","Regular",serif;
+}
+
+.progressBar img{
+    width: 20px;
+    height: auto;
+  
+}
+
+.progressBar::after{
+    content: "";
+    position: absolute;
+    background-color: #EAF0ED;
+    width: 100%;
+    height: 1px;
+    z-index: -1;
+    top: 13px;
+    left: 0;
+}
+
+@media screen and (max-width:767px) {
+
+    .cartImg {
+        width: 157px;
+        height: 106px;
+    }
+}

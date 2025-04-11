@@ -1,0 +1,341 @@
+<!doctype html>
+<html lang="zh-tw">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="shortcut icon" href="dessert-img/logo-dark.svg" type="image/x-icon">
+    <title> Sweetaste｜商品頁面</title>
+    <!-- google icon -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined">
+    <!-- 引入font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">    
+    <!-- 引入Bootstrap5 CSS和JS -->
+    <link rel="stylesheet" href="assets/css/all.css">
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+  <!-- 頁首 -->
+  <header  class="bg-white">
+    <!-- navbar設定  -->
+    <nav class="container navbar navbar-expand-md navbar-light flex-nowrap">
+      <div class="container-fluid justify-content-md-start position-relative z-0 ">
+        <!-- 漢堡選單鈕 -->
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand d-none d-md-block" href="index.html"><img src="./dessert-img/logo-all-dark.svg" alt="logo大圖" width="220px" height="40px" ></a>
+        
+        <div class=" list collapse navbar-collapse  z-1 start-0 w-100 bg-white text-center ms-md-5" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 "> <!-- me-auto 靠左 >> 改成ms-auto 變成靠右：margin-left:auto -->
+            <li class="nav-item fw-bold me-md-5">
+              <a class="nav-link" aria-current="page" href="index.html">首頁</a>
+            </li>
+
+            <li class="nav-item fw-bold me-md-5">
+              <a class="nav-link" href="product.html">甜點</a>
+            </li>
+
+            <li class="nav-item fw-bold me-md-5">
+              <a class="nav-link" href="login.html">登入</a>
+            </li>
+
+          </ul>
+
+        </div>
+
+        <!-- 平板以下呈現的logo小圖 -->
+        <div class="mx-auto">
+          <a class="navbar-brand d-md-none mx-auto" href="index.html"><img src="./dessert-img/logotype-lg-dark.svg" alt="logo小圖" width="115px" height="18px" ></a>
+        </div>
+
+      <!-- cart -->
+      <div>
+        <a class="navbar-brand" href="cartList.html"><img src="./dessert-img/shopping_cart.png" alt="cart" width="24px" height="24px" ></a>
+      </div>
+
+      </div>
+
+
+
+
+    </nav>
+
+</header>
+
+  <!--內容-->
+  <main>
+    <div class="container py-5">
+      <div class="row">
+        <img src="https://bit.ly/2Qodh3Z" alt="插圖">
+      </div>
+    </div>
+    <div class="container">
+      <div class="row justify-content-center justify-content-md-between pb-3">
+        <!-- 左大區塊 -->
+        <div class=" col-md-4">
+          <div  class="selectList text-center">
+            <div>
+              <h2 class="bg-dark-green w-100 p-3 d-block text-light d-block">甜點類別</h2>
+            </div>
+            <div>
+              <ul class="ps-0">
+                <li><a class="fs-3 w-100 p-4 d-block text-dark-green border border-light-green text-decoration-none fw-bold" href="#" target="_blank">所有甜點(48)</a></li>
+                <li><a class="fs-3 w-100 p-4 d-block text-dark-green border border-light-green text-decoration-none fw-bold" href="#" target="_blank">本日精選(10)</a></li>
+                <li><a class="fs-3 w-100 p-4 d-block text-dark-green border border-light-green text-decoration-none fw-bold" href="#" target="_blank">人氣推薦(26)</a></li>
+                <li><a class="fs-3 w-100 p-4 d-block text-dark-green border border-light-green text-decoration-none fw-bold" href="#" target="_blank">新品上市(12)</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- 右大區塊 -->
+        <div class="col-md-8 text-center d-flex flex-wrap justify-content-center justify-content-md-between" >
+          
+          <div class="product col-md-6 p-2">
+            <div >
+              <p class="featured fs-3 text-center text-light-green bg-dark-green p-3 ms-3"> 每日精選 </p>
+            </div>
+
+            <div>
+              <img class="favorite" src="./dessert-img/favorite_border.png" alt="favorite" width="30px" height="30">
+            </div>
+
+            <div>
+              <img class="productImg" src="./dessert-img/p-1.png" alt="焦糖馬卡龍">
+            </div>
+
+            <div class="information ">
+              <p class="d-block text-center w-100 fs-3 py-3 mb-0 border border-light-green border-top-0 border-end-0">焦糖馬卡龍</p>
+              <p class="d-block text-center w-100 fs-3 py-3 mb-0 border border-light-green border-top-0">$450</p>
+            </div>
+
+            <div>
+              <a class="btn btn-warning fs-2 w-100 p-4 rounded-0 border-0" href="#">加入購物車</a>
+            </div>
+          </div>
+
+
+          <div class="product col-md-6 p-2">
+            <div >
+              <p class="featured fs-3 text-center text-light-green bg-dark-green p-3 ms-3"> 每日精選 </p>
+            </div>
+
+            <div>
+              <img class="favorite" src="./dessert-img/favorite_border.png" alt="favorite" width="30px" height="30">
+            </div>
+
+            <div>
+              <img class="productImg" src="./dessert-img/p-2.png" alt="焦糖馬卡龍">
+            </div>
+
+            <div class="information">
+              <p class="d-block text-center w-100 fs-3 py-3 mb-0 border border-light-green border-top-0 border-end-0">焦糖馬卡龍</p>
+              <p class="d-block text-center w-100 fs-3 py-3 mb-0 border border-light-green border-top-0">$450</p>
+            </div>
+
+            <div class="">
+              <a class="btn btn-warning fs-2 w-100 p-4 rounded-0 border-0" href="#">加入購物車</a>
+            </div>
+          </div>
+
+          <div class="product col-md-6 p-2">
+            <div >
+              <p class="featured fs-3 text-center text-light-green bg-dark-green p-3 ms-3"> 每日精選 </p>
+            </div>
+
+            <div>
+              <img class="favorite" src="./dessert-img/favorite_border.png" alt="favorite" width="30px" height="30">
+            </div>
+
+            <div>
+              <img class="productImg" src="./dessert-img/p-3.png" alt="焦糖馬卡龍">
+            </div>
+
+            <div class="information">
+              <p class="d-block text-center w-100 fs-3 py-3 mb-0 border border-light-green border-top-0 border-end-0">焦糖馬卡龍</p>
+              <p class="d-block text-center w-100 fs-3 py-3 mb-0 border border-light-green border-top-0">$450</p>
+            </div>
+
+            <div>
+              <a class="btn btn-warning fs-2 w-100 p-4 rounded-0 border-0" href="#">加入購物車</a>
+            </div>
+          </div>
+
+          <div class="product col-md-6 p-2">
+            <div >
+              <p class="featured fs-3 text-center text-light-green bg-dark-green p-3 ms-3"> 每日精選 </p>
+            </div>
+
+            <div>
+              <img class="favorite" src="./dessert-img/favorite_border.png" alt="favorite" width="30px" height="30">
+            </div>
+
+            <div>
+              <img class="productImg" src="./dessert-img/p-4.png" alt="焦糖馬卡龍">
+            </div>
+
+            <div class="information">
+              <p class="d-block text-center w-100 fs-3 py-3 mb-0 border border-light-green border-top-0 border-end-0">焦糖馬卡龍</p>
+              <p class="d-block text-center w-100 fs-3 py-3 mb-0 border border-light-green border-top-0">$450</p>
+            </div>
+
+            <div>
+              <a class="btn btn-warning fs-2 w-100 p-4 rounded-0 border-0" href="#">加入購物車</a>
+            </div>
+          </div>    
+
+          <div class="product col-md-6 p-2">
+            <div >
+              <p class="featured fs-3 text-center text-light-green bg-dark-green p-3 ms-3"> 每日精選 </p>
+            </div>
+
+            <div>
+              <img class="favorite" src="./dessert-img/favorite_border.png" alt="favorite" width="30px" height="30">
+            </div>
+
+            <div>
+              <img class="productImg" src="./dessert-img/p-5.png" alt="焦糖馬卡龍">
+            </div>
+
+            <div class="information">
+              <p class="d-block text-center w-100 fs-3 py-3 mb-0 border border-light-green border-top-0 border-end-0">焦糖馬卡龍</p>
+              <p class="d-block text-center w-100 fs-3 py-3 mb-0 border border-light-green border-top-0">$450</p>
+            </div>
+
+            <div>
+              <a class="btn btn-warning fs-2 w-100 p-4 rounded-0 border-0" href="#">加入購物車</a>
+            </div>
+          </div>   
+            
+          <div class="product col-md-6 p-2 ">
+            <div >
+              <p class="featured fs-3 text-center text-light-green bg-dark-green p-3 ms-3"> 每日精選 </p>
+            </div>
+
+            <div>
+              <img class="favorite" src="./dessert-img/favorite_border.png" alt="favorite" width="30px" height="30">
+            </div>
+
+            <div>
+              <img class="productImg" src="./dessert-img/p-6.png" alt="焦糖馬卡龍">
+            </div>
+
+            <div class="information w-100 justify-content-center">
+              <p class="d-block text-center w-100 fs-3 py-3 mb-0 border border-light-green border-top-0 border-end-0">焦糖馬卡龍</p>
+              <p class="d-block text-center w-100 fs-3 py-3 mb-0 border border-light-green border-top-0">$450</p>
+            </div>
+
+            <div>
+              <a class="btn btn-warning fs-2 w-100 p-4 rounded-0 border-0" href="#">加入購物車</a>
+            </div>
+          </div> 
+
+        </div>
+      </div>
+
+
+      <!-- 分頁頁碼 -->
+      <div>
+
+        <nav aria-label="...">
+
+          <ul class="pagination justify-content-end">
+            <li class="page-item disabled">
+              <a class="page-link p-0 pb-1 bg-white rounded-0" href="#" tabindex="-1" aria-disabled="true"><img  src="./dessert-img/arrow_left.png" alt="previous page"></a>
+            </li>
+            <li class="page-item active ">
+              <a class="page-link fs-5 bg-dark-green text-light-green " href="#">1</a>
+            </li>
+            <li class="page-item " aria-current="page">
+              <a class="page-link fs-5 text-dark-green" href="#">2</a>
+            </li>
+            <li class="page-item ">
+              <a class="page-link fs-5 text-dark-green" href="#">3</a>
+            </li>
+            <li class="page-item ">
+              <a class="page-link p-0 pb-1 rounded-0" href="#"><img src="./dessert-img/arrow_right.png" alt="next page"></a>
+            </li>
+          </ul>
+
+        </nav>
+
+      </div>
+    </div>
+
+
+  </main>
+
+
+  <!-- 頁尾 -->
+  <footer>
+    <div class="item1 bg-dark-green mt-5">
+      <div class="container py-2" >
+        <div class=" row justify-content-between">
+
+          <div class="d-flex justify-content-center justify-content-md-start align-items-center col-md-6 py-md-0 py-3">
+            <div>
+              <img src="./dessert-img/logo-light.svg" alt="logo-light" width="40px" height="40px" >
+            </div>
+            <p class="fs-4 text-light m-0 ps-4">訂閱你我的甜蜜郵件</p>
+          </div>
+
+          <!-- email資訊框 -->
+          <div class="col-md-4 align-content-center m-0 p-3"> 
+            <form>
+              <div class="input-group " >
+                <label for="emailText"><img src="./dessert-img/mail-24px.png"  alt="mail" class="input-group-text light rounded-0"></label>
+                <input type="text" class="form-control" placeholder="email" id="emailText" name="email">
+                <button class="btn btn-outline-warning btn-warning rounded-0" type="submit"><img src="./dessert-img/arrow_forward-24px.png" alt="send"></button>
+              </div>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="item2 bg-light-green">
+      <div class="container py-5 ">
+        <div class="row justify-content-between">
+
+          <div class=" information col-lg-3 flex-column justify-content-between">
+            <img src="./dessert-img/logotype-sm-dark.svg" alt="small logo"  width="172px" height="27px">
+            
+            <div class="mt-5">
+              <p class="fs-5"> 07-1234-5678<br> sweetaste@email.com<br> 800 高雄市新興區幸福路 520 號 <p>
+            </div>
+          </div>
+
+          <div class=" col-lg-3 text-end  d-md-block  d-none">
+            <img src="./dessert-img/sm-今天是個吃甜點的好日子.svg" alt="text" width="59px" height="220px">
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="item2 bg-light-green">
+      <div class="d-md-flex justify-content-between mx-auto container">
+        <ul class="d-flex justify-content-start p-0">
+          <li>
+            <a href="#" target="_blank"><img src="./dessert-img/ic-line@.svg" alt="line"  width="32px" height="32px" ></a>
+          </li>
+          <li class="ms-3">
+            <a href="#" target="_blank"><img src="./dessert-img/ic-facebook.svg" alt="fb" width="32px" height="32px"></a>
+          </li>
+        </ul>
+        <div>
+          <p class="m-0">
+            <small> &copy; 2018 Sweetaste* All Rights Reserved </small>
+          </p>
+        </div>
+      </div>
+    </div>
+
+
+  </footer>
+
+</body>
+
+</html>
