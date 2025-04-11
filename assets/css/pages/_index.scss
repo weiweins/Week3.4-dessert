@@ -78,15 +78,24 @@
     height: auto;
 }
 
+.productBox{
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    padding-top: 100%;
+}
+
 .productImg{ 
     object-fit: cover;
+    position: absolute;
+    top: 0;
     width: 100%;
-    height: 315px;
-
+    height: 100%;
 }
 
 .bgImg {
-    width: 260px;
+    object-fit: cover;
+    width: 100%;
     height: 256px;
 
 }
@@ -108,7 +117,7 @@
 }
 
 .imgBox{
-    margin-top: -100px;
+    margin-top: -100px !important;
 }
 
 @media screen and (max-width:767px) {
